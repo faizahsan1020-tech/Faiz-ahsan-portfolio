@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Faiz Ahsan — Web Developer &amp; DSA Enthusiast</title>
+<meta name="description" content="Portfolio of Faiz Ahsan — Web Developer, Python/Flask &amp; DSA enthusiast, student at Iqra University." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Background canvas: particles -->
+<canvas id="particles"></canvas>
+
+<!-- Progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-bracket">&lt;</span>FA<span class="brand-bracket">/&gt;</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#experience">3d-demo</a>
+      <a href="#education">education</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">say hello</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-grid"></div>
+    <div class="hero-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="hero-cubes" id="heroCubes"></div>
+
+    <div class="hero-content container">
+      <p class="eyebrow"><span class="dot-pulse"></span> available for opportunities</p>
+      <h1 class="hero-title">
+        <span class="hero-title-line">Faiz Ahsan</span>
+      </h1>
+      <div class="terminal-line">
+        <span class="terminal-prompt">faiz@dev:~$</span>
+        <span class="terminal-text" id="typedText"></span><span class="terminal-cursor">|</span>
+      </div>
+      <p class="hero-sub">Building real-world web applications &amp; solving programming problems — one clean commit at a time.</p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <span>Get In Touch</span>
+        </a>
+      </div>
+
+      <div class="hero-stack">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python · Flask</span><span>PHP</span><span>MySQL</span><span>Java</span><span>DSA</span><span>Git/GitHub</span>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span class="scroll-cue-line"></span>
+      scroll
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-label">// 01 — about.me</p>
+      <h2 class="section-title">The person behind <span class="text-accent">the&nbsp;commits</span></h2>
+
+      <div class="about-layout">
+        <div class="glass-card about-card" data-tilt>
+          <div class="about-card-glow"></div>
+          <div class="about-avatar">
+            <div class="about-avatar-ring"></div>
+            <span>FA</span>
+          </div>
+          <p class="about-text">
+            I'm <strong>Faiz Ahsan</strong>, a Computer Science student at <strong>Iqra University</strong> with a steady obsession for turning logic into things people can actually click on. My world splits between two screens — one running Flask routes and DSA problems, the other shipping clean, responsive interfaces.
+          </p>
+          <p class="about-text">
+            I like software that does its job without making noise about it. Whether it's a truth-table generator that simplifies boolean logic or a business website that needs to look trustworthy on day one, I care about the same things: correctness first, polish second, and code a future-me won't be embarrassed by.
+          </p>
+          <div class="about-meta">
+            <div class="about-meta-item">
+              <span class="about-meta-label">based in</span>
+              <span class="about-meta-value">Pakistan</span>
+            </div>
+            <div class="about-meta-item">
+              <span class="about-meta-label">studying</span>
+              <span class="about-meta-value">Computer Science, Iqra University</span>
+            </div>
+            <div class="about-meta-item">
+              <span class="about-meta-label">focused on</span>
+              <span class="about-meta-value">Web Apps &amp; DSA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-side">
+          <div class="glass-card mini-stat" data-tilt>
+            <span class="mini-stat-num" data-count="4">0</span>
+            <span class="mini-stat-label">Projects shipped</span>
+          </div>
+          <div class="glass-card mini-stat" data-tilt>
+            <span class="mini-stat-num" data-count="5">0</span>
+            <span class="mini-stat-label">Core technologies</span>
+          </div>
+          <div class="glass-card mini-stat" data-tilt>
+            <span class="mini-stat-num" data-count="100" data-suffix="%">0</span>
+            <span class="mini-stat-label">Self-driven curiosity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-label">// 02 — skills.json</p>
+      <h2 class="section-title">Tools I reach for <span class="text-accent">most</span></h2>
+      <p class="section-desc">Each card holds its weight — tilt them and see what's underneath.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-card-inner">
+            <div class="skill-icon" style="--c1:#e34f26;--c2:#1572b6;--c3:#f7df1e">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none"><path d="M3 3l1.6 17.5L12 22l7.4-1.5L21 3H3z" fill="currentColor" opacity=".15"/><path d="M6 7h12M7 7l.6 7M17 7l-.8 9.5L12 18l-4.2-1.2L7.5 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Frontend</h3>
+            <p>HTML, CSS &amp; JavaScript</p>
+            <div class="skill-tags">
+              <span>HTML5</span><span>CSS3</span><span>JS (ES6+)</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--lvl:88%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-card-inner">
+            <div class="skill-icon" style="--c1:#3776ab;--c2:#ffd43b">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none"><circle cx="12" cy="12" r="9" fill="currentColor" opacity=".12"/><path d="M9 4.5h4a2 2 0 012 2V11H8a2 2 0 00-2 2v2.5M15 19.5h-4a2 2 0 01-2-2V14h7a2 2 0 002-2V9.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.3" cy="6.7" r=".9" fill="currentColor"/><circle cx="14.7" cy="17.3" r=".9" fill="currentColor"/></svg>
+            </div>
+            <h3>Python</h3>
+            <p>Backend logic with Flask</p>
+            <div class="skill-tags">
+              <span>Flask</span><span>REST routes</span><span>Scripting</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--lvl:82%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-card-inner">
+            <div class="skill-icon" style="--c1:#f89820;--c2:#5382a1">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none"><path d="M8 16c-1.5 1 0 2.2 2 2.6 3.4.7 7-.1 7-1.9 0-1-1.2-1.6-2.6-1.9M9 12.3c-1.7.6-1.7 1.7 0 2.2 2.4.7 6.4.5 8-1 .7-.7-.1-1.5-1-1.8M13.5 4S11 6 13.5 8.5c2 2-1 3.5 0 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </div>
+            <h3>Java</h3>
+            <p>Object-oriented &amp; DSA</p>
+            <div class="skill-tags">
+              <span>OOP</span><span>Data Structures</span><span>Algorithms</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--lvl:85%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-card-inner">
+            <div class="skill-icon" style="--c1:#f05133;--c2:#181717">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.4"/><path d="M12 3v6M12 15v6M5.5 7l4 3.2M14.5 13.8l4 3.2M18.5 7l-4 3.2M9.5 13.8l-4 3.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Git &amp; GitHub</h3>
+            <p>Version control workflow</p>
+            <div class="skill-tags">
+              <span>Branching</span><span>PRs</span><span>Collaboration</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--lvl:80%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-card-inner">
+            <div class="skill-icon" style="--c1:#8993be;--c2:#4f5b93">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none"><ellipse cx="12" cy="8" rx="8" ry="3.5" stroke="currentColor" stroke-width="1.4"/><path d="M4 8v5c0 1.93 3.58 3.5 8 3.5s8-1.57 8-3.5V8M4 13v3c0 1.93 3.58 3.5 8 3.5s8-1.57 8-3.5v-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </div>
+            <h3>PHP</h3>
+            <p>Server-side scripting</p>
+            <div class="skill-tags">
+              <span>PHP 8</span><span>Forms</span><span>Sessions</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--lvl:75%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-card-inner">
+            <div class="skill-icon" style="--c1:#00758f;--c2:#f29111">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none"><path d="M12 3C7.03 3 3 5.24 3 8s4.03 5 9 5 9-2.24 9-5-4.03-5-9-5z" stroke="currentColor" stroke-width="1.4"/><path d="M3 8v4c0 2.76 4.03 5 9 5s9-2.24 9-5V8M3 12v4c0 2.76 4.03 5 9 5s9-2.24 9-5v-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </div>
+            <h3>MySQL</h3>
+            <p>Relational database design</p>
+            <div class="skill-tags">
+              <span>CRUD</span><span>Joins</span><span>Schema Design</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--lvl:78%"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-label">// 03 — projects</p>
+      <h2 class="section-title">Things I've <span class="text-accent">built</span></h2>
+      <p class="section-desc">From logic-heavy tools to real client work — each one taught me something the tutorials didn't.</p>
+
+      <div class="projects-grid">
+
+        <article class="project-card" data-tilt>
+          <div class="project-window">
+            <div class="project-window-bar">
+              <span></span><span></span><span></span>
+              <em>truth-table-generator.py</em>
+            </div>
+            <div class="project-preview" data-preview="truth">
+              <svg viewBox="0 0 400 240" class="preview-svg" preserveAspectRatio="none">
+                <rect width="400" height="240" fill="#0c1018"/>
+                <g font-family="JetBrains Mono, monospace" font-size="11" fill="#0ef6cc" opacity="0.85">
+                  <text x="20" y="30">A</text><text x="60" y="30">B</text><text x="110" y="30">A∧B</text><text x="170" y="30">A∨B</text>
+                  <text x="20" y="55">0</text><text x="60" y="55">0</text><text x="110" y="55">0</text><text x="170" y="55">0</text>
+                  <text x="20" y="78">0</text><text x="60" y="78">1</text><text x="110" y="78">0</text><text x="170" y="78">1</text>
+                  <text x="20" y="101">1</text><text x="60" y="101">0</text><text x="110" y="101">0</text><text x="170" y="101">1</text>
+                  <text x="20" y="124">1</text><text x="60" y="124">1</text><text x="110" y="124">1</text><text x="170" y="124">1</text>
+                </g>
+                <line x1="0" y1="38" x2="400" y2="38" stroke="#1c2433" stroke-width="1"/>
+                <rect x="10" y="150" width="380" height="70" rx="6" fill="#11161f" stroke="#1c2433"/>
+                <text x="22" y="172" font-family="JetBrains Mono, monospace" font-size="10" fill="#7c5cff">def evaluate(expr, vars):</text>
+                <text x="32" y="190" font-family="JetBrains Mono, monospace" font-size="10" fill="#8b96a8">return eval(expr, vars)</text>
+                <text x="22" y="208" font-family="JetBrains Mono, monospace" font-size="10" fill="#0ef6cc"># O(2^n) truth rows</text>
+              </svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Python</span><span>Flask</span><span>DSA Logic</span></div>
+            <h3>Truth Table Generator</h3>
+            <p>A web tool that parses boolean expressions and generates full truth tables on the fly, applying recursive expression-tree evaluation under the hood.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Source <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <div class="project-window">
+            <div class="project-window-bar">
+              <span></span><span></span><span></span>
+              <em>LibraryManagementSystem.java</em>
+            </div>
+            <div class="project-preview" data-preview="library">
+              <svg viewBox="0 0 400 240" class="preview-svg" preserveAspectRatio="none">
+                <rect width="400" height="240" fill="#0c1018"/>
+                <g stroke="#1c2433">
+                  <rect x="20" y="20" width="150" height="34" rx="5" fill="#11161f"/>
+                  <rect x="20" y="60" width="150" height="34" rx="5" fill="#11161f"/>
+                  <rect x="20" y="100" width="150" height="34" rx="5" fill="#11161f"/>
+                  <rect x="20" y="140" width="150" height="34" rx="5" fill="#11161f"/>
+                </g>
+                <g font-family="JetBrains Mono, monospace" font-size="10" fill="#e8ecf1">
+                  <text x="32" y="41">Book #102</text>
+                  <text x="32" y="81">Book #117</text>
+                  <text x="32" y="121">Book #133</text>
+                  <text x="32" y="161">Book #144</text>
+                </g>
+                <g font-family="JetBrains Mono, monospace" font-size="9" fill="#0ef6cc">
+                  <text x="120" y="41">issued</text>
+                  <text x="120" y="81">free</text>
+                  <text x="120" y="121">issued</text>
+                  <text x="120" y="161">free</text>
+                </g>
+                <rect x="195" y="20" width="185" height="154" rx="6" fill="#11161f" stroke="#1c2433"/>
+                <text x="208" y="42" font-family="JetBrains Mono, monospace" font-size="10" fill="#7c5cff">class Library {</text>
+                <text x="220" y="62" font-family="JetBrains Mono, monospace" font-size="9" fill="#8b96a8">HashMap&lt;Id,Book&gt;</text>
+                <text x="220" y="80" font-family="JetBrains Mono, monospace" font-size="9" fill="#8b96a8">Queue&lt;Reservation&gt;</text>
+                <text x="220" y="98" font-family="JetBrains Mono, monospace" font-size="9" fill="#8b96a8">BST sortByTitle()</text>
+                <text x="208" y="120" font-family="JetBrains Mono, monospace" font-size="10" fill="#7c5cff">}</text>
+              </svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Java</span><span>OOP</span><span>DSA</span></div>
+            <h3>Library Management System</h3>
+            <p>A desktop-style Java app for issuing, returning, and searching books — built around hash maps, queues, and binary search trees for fast lookups.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Source <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <div class="project-window">
+            <div class="project-window-bar">
+              <span></span><span></span><span></span>
+              <em>school-website/index.html</em>
+            </div>
+            <div class="project-preview" data-preview="school">
+              <svg viewBox="0 0 400 240" class="preview-svg" preserveAspectRatio="none">
+                <rect width="400" height="240" fill="#0c1018"/>
+                <rect x="0" y="0" width="400" height="36" fill="#11161f"/>
+                <circle cx="24" cy="18" r="7" fill="#0ef6cc"/>
+                <g fill="#8b96a8"><rect x="280" y="14" width="30" height="8" rx="2"/><rect x="320" y="14" width="30" height="8" rx="2"/><rect x="360" y="14" width="24" height="8" rx="2"/></g>
+                <rect x="24" y="60" width="180" height="14" rx="3" fill="#e8ecf1"/>
+                <rect x="24" y="84" width="240" height="9" rx="2" fill="#8b96a8"/>
+                <rect x="24" y="100" width="200" height="9" rx="2" fill="#8b96a8"/>
+                <rect x="24" y="124" width="100" height="30" rx="6" fill="#0ef6cc" opacity="0.85"/>
+                <rect x="250" y="56" width="126" height="100" rx="8" fill="#181f2c" stroke="#2a3344"/>
+                <g stroke="#0ef6cc" stroke-width="1.5" opacity="0.6"><path d="M275 130l20-30 16 18 20-26" fill="none"/></g>
+                <rect x="24" y="180" width="110" height="44" rx="6" fill="#11161f" stroke="#1c2433"/>
+                <rect x="146" y="180" width="110" height="44" rx="6" fill="#11161f" stroke="#1c2433"/>
+                <rect x="268" y="180" width="108" height="44" rx="6" fill="#11161f" stroke="#1c2433"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>HTML/CSS</span><span>Responsive</span><span>Frontend</span></div>
+            <h3>School Website</h3>
+            <p>A clean, fully responsive school information site — admissions, faculty, and announcements laid out for clarity on any device.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Live demo <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <div class="project-window">
+            <div class="project-window-bar">
+              <span></span><span></span><span></span>
+              <em>psit-website/index.html</em>
+            </div>
+            <div class="project-preview" data-preview="psit">
+              <svg viewBox="0 0 400 240" class="preview-svg" preserveAspectRatio="none">
+                <rect width="400" height="240" fill="#0c1018"/>
+                <rect x="0" y="0" width="400" height="44" fill="#11161f" stroke="#1c2433"/>
+                <circle cx="22" cy="22" r="9" fill="#7c5cff" opacity="0.9"/>
+                <text x="38" y="27" font-family="Space Grotesk, sans-serif" font-size="11" fill="#e8ecf1" font-weight="600">PSIT</text>
+                <g fill="#8b96a8" font-family="Inter, sans-serif" font-size="9">
+                  <text x="200" y="27">Home</text><text x="240" y="27">About</text><text x="284" y="27">Programs</text><text x="340" y="27">Contact</text>
+                </g>
+                <rect x="0" y="44" width="400" height="96" fill="url(#psit-g)"/>
+                <defs><linearGradient id="psit-g" x1="0" y1="0" x2="400" y2="96"><stop offset="0" stop-color="#181028"/><stop offset="1" stop-color="#0c1018"/></linearGradient></defs>
+                <text x="28" y="90" font-family="Space Grotesk, sans-serif" font-size="16" fill="#e8ecf1" font-weight="700">Pak-Swedish Institute</text>
+                <text x="28" y="108" font-family="Inter, sans-serif" font-size="9" fill="#8b96a8">Technical Excellence · Landhi, Karachi</text>
+                <rect x="28" y="120" width="90" height="20" rx="10" fill="#7c5cff" opacity="0.9"/>
+                <text x="42" y="134" font-family="Inter, sans-serif" font-size="9" fill="#fff">Explore Programs</text>
+                <rect x="20" y="158" width="112" height="62" rx="8" fill="#11161f" stroke="#1c2433"/>
+                <rect x="148" y="158" width="112" height="62" rx="8" fill="#11161f" stroke="#1c2433"/>
+                <rect x="276" y="158" width="104" height="62" rx="8" fill="#11161f" stroke="#1c2433"/>
+                <text x="36" y="178" font-family="Inter, sans-serif" font-size="8" fill="#0ef6cc">CIT</text>
+                <text x="36" y="192" font-family="Inter, sans-serif" font-size="8" fill="#8b96a8">Computer Info Tech</text>
+                <text x="162" y="178" font-family="Inter, sans-serif" font-size="8" fill="#0ef6cc">Web Dev</text>
+                <text x="162" y="192" font-family="Inter, sans-serif" font-size="8" fill="#8b96a8">Design &amp; Dev</text>
+                <text x="290" y="178" font-family="Inter, sans-serif" font-size="8" fill="#0ef6cc">Electronics</text>
+                <text x="290" y="192" font-family="Inter, sans-serif" font-size="8" fill="#8b96a8">Technical</text>
+              </svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>HTML/CSS/JS</span><span>PHP</span><span>Institutional</span></div>
+            <h3>PSIT College Website</h3>
+            <p>Official website for Government Pakistani Swedish Institute of Technology — program listings, admissions info, faculty directory, and a fully responsive layout built from scratch.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Live demo <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <div class="project-window">
+            <div class="project-window-bar">
+              <span></span><span></span><span></span>
+              <em>waqashi-business/index.html</em>
+            </div>
+            <div class="project-preview" data-preview="waqashi">
+              <svg viewBox="0 0 400 240" class="preview-svg" preserveAspectRatio="none">
+                <rect width="400" height="240" fill="#0c1018"/>
+                <rect x="0" y="0" width="400" height="240" fill="url(#g1)"/>
+                <defs>
+                  <linearGradient id="g1" x1="0" y1="0" x2="400" y2="240">
+                    <stop offset="0" stop-color="#181028"/>
+                    <stop offset="1" stop-color="#0c1018"/>
+                  </linearGradient>
+                </defs>
+                <rect x="0" y="0" width="400" height="40" fill="#11161f" opacity="0.8"/>
+                <rect x="24" y="15" width="70" height="10" rx="2" fill="#7c5cff"/>
+                <text x="150" y="100" font-family="Space Grotesk, sans-serif" font-size="22" fill="#e8ecf1" font-weight="600">Waqashi</text>
+                <text x="150" y="124" font-family="Inter, sans-serif" font-size="11" fill="#8b96a8">Trusted local business, online</text>
+                <rect x="150" y="142" width="96" height="30" rx="15" fill="#7c5cff"/>
+                <text x="172" y="161" font-family="Inter, sans-serif" font-size="10" fill="#fff">Get Started</text>
+                <circle cx="330" cy="120" r="46" fill="#7c5cff" opacity="0.18"/>
+                <circle cx="330" cy="120" r="28" fill="#0ef6cc" opacity="0.2"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Client project</span><span>HTML/CSS/JS</span><span>Business</span></div>
+            <h3>Waqashi Business Website</h3>
+            <p>A real-world client site built to establish credibility online — service listings, contact flow, and a brand-first visual identity.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Live demo <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3D EXPERIENCE ============ -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <p class="section-label">// 04 — 3d-experience</p>
+      <h2 class="section-title">3D Interactive <span class="text-accent">Web Experience</span></h2>
+      <p class="section-desc">Move your cursor across the panel — the monitor tilts in real 3D space, driven by pure CSS perspective transforms. No libraries, just code.</p>
+
+      <div class="experience-stage" id="experienceStage">
+        <div class="experience-floor"></div>
+
+        <div class="device-wrap" id="deviceWrap">
+          <div class="device-monitor">
+            <div class="device-screen">
+              <div class="screen-nav">
+                <span class="screen-dot"></span><span class="screen-dot"></span><span class="screen-dot"></span>
+                <div class="screen-url">faizahsan.dev</div>
+              </div>
+              <div class="screen-body">
+                <div class="screen-hero">
+                  <div class="screen-line w-60"></div>
+                  <div class="screen-line w-40 accent"></div>
+                  <div class="screen-line w-80 dim"></div>
+                  <div class="screen-btn"></div>
+                </div>
+                <div class="screen-cards">
+                  <div class="screen-card"></div>
+                  <div class="screen-card"></div>
+                  <div class="screen-card"></div>
+                </div>
+              </div>
+            </div>
+          <div class="device-stand"></div>
+          <div class="device-base"></div>
+
+          <div class="floating-chip chip-1">{ }</div>
+          <div class="floating-chip chip-2">&lt;/&gt;</div>
+          <div class="floating-chip chip-3">git</div>
+          <div class="floating-chip chip-4">⚡</div>
+          <div class="floating-chip chip-5">PHP</div>
+          <div class="floating-chip chip-6">SQL</div>
+        </div>
+
+        <div class="experience-hint">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3v6m0 0L9 6m3 3l3-3M5 14a7 7 0 0014 0v-1a7 7 0 00-14 0v1z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          move your mouse to tilt
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <div class="container">
+      <p class="section-label">// 05 — education.log</p>
+      <h2 class="section-title">Where it's being <span class="text-accent">built</span></h2>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card" data-tilt>
+            <span class="timeline-period">2023 — Present</span>
+            <h3>BS Computer Science</h3>
+            <p class="timeline-org">Iqra University, Karachi</p>
+            <p class="timeline-desc">Coursework spanning data structures &amp; algorithms, object-oriented programming, web technologies, and software engineering fundamentals — paired with self-driven project work outside the classroom.</p>
+            <div class="timeline-tags">
+              <span>Data Structures</span><span>Algorithms</span><span>Web Dev</span><span>OOP</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" style="margin-top:32px;">
+          <div class="timeline-dot" style="background:var(--violet);box-shadow:0 0 0 5px rgba(124,92,255,0.14)"></div>
+          <div class="glass-card timeline-card" data-tilt>
+            <span class="timeline-period" style="color:var(--violet)">2021 — 2023</span>
+            <h3>Diploma — CIT</h3>
+            <p class="timeline-org">Govt. Pakistani Swedish Institute of Technology (PSIT), Landhi, Karachi</p>
+            <p class="timeline-desc">Three-year Computer Information Technology diploma covering web development, web designing, PHP with MySQL database integration, and core computing fundamentals. Built and deployed a full institutional website for the college as a capstone project.</p>
+            <div class="timeline-tags">
+              <span>Web Development</span><span>Web Designing</span><span>PHP</span><span>MySQL</span><span>HTML/CSS/JS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <p class="section-label">// 06 — contact.send()</p>
+      <h2 class="section-title">Let's build <span class="text-accent">something</span></h2>
+      <p class="section-desc">Have a project, an opportunity, or just want to talk DSA? My inbox is open.</p>
+
+      <div class="contact-layout">
+        <div class="glass-card contact-form-card" data-tilt>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8l12-6-4 12-3-4-5-2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="contact-side">
+          <a href="mailto:faizahsan1020@gmail.com" class="glass-card contact-link-card" data-tilt>
+            <span class="contact-icon">✉</span>
+            <div>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">faizahsan1020@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://wa.me/923131144751" target="_blank" rel="noopener" class="glass-card contact-link-card" data-tilt>
+            <span class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.858L.057 23.25l5.565-1.457A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.782 9.782 0 01-4.988-1.367l-.357-.212-3.704.971.988-3.607-.232-.37A9.781 9.781 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            </span>
+            <div>
+              <span class="contact-link-label">WhatsApp</span>
+              <span class="contact-link-value">+92 313 1144751</span>
+            </div>
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="glass-card contact-link-card" data-tilt>
+            <span class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.27 7.78 10.77.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.17.69-3.83-1.34-3.83-1.34-.52-1.31-1.27-1.66-1.27-1.66-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.73-1.54-2.53-.29-5.19-1.27-5.19-5.64 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17.91-.25 1.89-.38 2.86-.38.97 0 1.95.13 2.86.38 2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.73.8 1.18 1.82 1.18 3.07 0 4.38-2.66 5.34-5.2 5.63.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.21.66.79.55A11.26 11.26 0 0023.25 11.75C23.25 5.48 18.27.5 12 .5z"/></svg>
+            </span>
+            <div>
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">github.com/faizahsan</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="glass-card contact-link-card" data-tilt>
+            <span class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.27 2.38 4.27 5.47v6.27zM5.34 7.43a2.07 2.07 0 110-4.13 2.07 2.07 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            </span>
+            <div>
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">linkedin.com/in/faizahsan</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> Faiz Ahsan. Built with HTML, CSS &amp; JavaScript.</p>
+    <p class="footer-tag">designed &amp; coded line by line — no template, no shortcuts.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
