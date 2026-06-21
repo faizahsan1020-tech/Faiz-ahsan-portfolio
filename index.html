@@ -126,11 +126,11 @@
 
         <div class="about-side">
           <div class="glass-card mini-stat" data-tilt>
-            <span class="mini-stat-num" data-count="4">0</span>
+            <span class="mini-stat-num" data-count="5">0</span>
             <span class="mini-stat-label">Projects shipped</span>
           </div>
           <div class="glass-card mini-stat" data-tilt>
-            <span class="mini-stat-num" data-count="5">0</span>
+            <span class="mini-stat-num" data-count="7">0</span>
             <span class="mini-stat-label">Core technologies</span>
           </div>
           <div class="glass-card mini-stat" data-tilt>
@@ -195,6 +195,34 @@
 
         <div class="skill-card" data-tilt>
           <div class="skill-card-inner">
+            <div class="skill-icon" style="--c1:#777bb4;--c2:#4f5b93">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none"><ellipse cx="12" cy="12" rx="9.5" ry="6" stroke="currentColor" stroke-width="1.4"/><text x="12" y="15" font-family="JetBrains Mono, monospace" font-size="7" fill="currentColor" text-anchor="middle" font-weight="700">php</text></svg>
+            </div>
+            <h3>PHP</h3>
+            <p>Server-side web development</p>
+            <div class="skill-tags">
+              <span>Procedural PHP</span><span>Forms</span><span>Sessions</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--lvl:75%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-card-inner">
+            <div class="skill-icon" style="--c1:#4479a1;--c2:#00758f">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none"><ellipse cx="12" cy="6" rx="7" ry="2.6" stroke="currentColor" stroke-width="1.4"/><path d="M5 6v12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6" stroke="currentColor" stroke-width="1.4"/><path d="M5 12c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6" stroke="currentColor" stroke-width="1.4"/></svg>
+            </div>
+            <h3>MySQL</h3>
+            <p>Relational database design</p>
+            <div class="skill-tags">
+              <span>Schema design</span><span>Joins</span><span>CRUD</span>
+            </div>
+            <div class="skill-bar"><div class="skill-bar-fill" style="--lvl:78%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-tilt>
+          <div class="skill-card-inner">
             <div class="skill-icon" style="--c1:#f05133;--c2:#181717">
               <svg viewBox="0 0 24 24" width="30" height="30" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.4"/><path d="M12 3v6M12 15v6M5.5 7l4 3.2M14.5 13.8l4 3.2M18.5 7l-4 3.2M9.5 13.8l-4 3.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
             </div>
@@ -204,34 +232,6 @@
               <span>Branching</span><span>PRs</span><span>Collaboration</span>
             </div>
             <div class="skill-bar"><div class="skill-bar-fill" style="--lvl:80%"></div></div>
-          </div>
-        </div>
-
-        <div class="skill-card" data-tilt>
-          <div class="skill-card-inner">
-            <div class="skill-icon" style="--c1:#8993be;--c2:#4f5b93">
-              <svg viewBox="0 0 24 24" width="30" height="30" fill="none"><ellipse cx="12" cy="8" rx="8" ry="3.5" stroke="currentColor" stroke-width="1.4"/><path d="M4 8v5c0 1.93 3.58 3.5 8 3.5s8-1.57 8-3.5V8M4 13v3c0 1.93 3.58 3.5 8 3.5s8-1.57 8-3.5v-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-            </div>
-            <h3>PHP</h3>
-            <p>Server-side scripting</p>
-            <div class="skill-tags">
-              <span>PHP 8</span><span>Forms</span><span>Sessions</span>
-            </div>
-            <div class="skill-bar"><div class="skill-bar-fill" style="--lvl:75%"></div></div>
-          </div>
-        </div>
-
-        <div class="skill-card" data-tilt>
-          <div class="skill-card-inner">
-            <div class="skill-icon" style="--c1:#00758f;--c2:#f29111">
-              <svg viewBox="0 0 24 24" width="30" height="30" fill="none"><path d="M12 3C7.03 3 3 5.24 3 8s4.03 5 9 5 9-2.24 9-5-4.03-5-9-5z" stroke="currentColor" stroke-width="1.4"/><path d="M3 8v4c0 2.76 4.03 5 9 5s9-2.24 9-5V8M3 12v4c0 2.76 4.03 5 9 5s9-2.24 9-5v-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-            </div>
-            <h3>MySQL</h3>
-            <p>Relational database design</p>
-            <div class="skill-tags">
-              <span>CRUD</span><span>Joins</span><span>Schema Design</span>
-            </div>
-            <div class="skill-bar"><div class="skill-bar-fill" style="--lvl:78%"></div></div>
           </div>
         </div>
 
@@ -277,7 +277,7 @@
             <h3>Truth Table Generator</h3>
             <p>A web tool that parses boolean expressions and generates full truth tables on the fly, applying recursive expression-tree evaluation under the hood.</p>
             <div class="project-links">
-              <a href="#" class="project-link">Source <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="https://github.com/faizahsan1020-tech/Truth-Table-Generator" target="_blank" rel="noopener" class="project-link">Source <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             </div>
           </div>
         </article>
@@ -323,7 +323,7 @@
             <h3>Library Management System</h3>
             <p>A desktop-style Java app for issuing, returning, and searching books — built around hash maps, queues, and binary search trees for fast lookups.</p>
             <div class="project-links">
-              <a href="#" class="project-link">Source <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="https://github.com/faizahsan1020-tech/Library-Management-System" target="_blank" rel="noopener" class="project-link">Source <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             </div>
           </div>
         </article>
@@ -357,50 +357,7 @@
             <h3>School Website</h3>
             <p>A clean, fully responsive school information site — admissions, faculty, and announcements laid out for clarity on any device.</p>
             <div class="project-links">
-              <a href="#" class="project-link">Live demo <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card" data-tilt>
-          <div class="project-window">
-            <div class="project-window-bar">
-              <span></span><span></span><span></span>
-              <em>psit-website/index.html</em>
-            </div>
-            <div class="project-preview" data-preview="psit">
-              <svg viewBox="0 0 400 240" class="preview-svg" preserveAspectRatio="none">
-                <rect width="400" height="240" fill="#0c1018"/>
-                <rect x="0" y="0" width="400" height="44" fill="#11161f" stroke="#1c2433"/>
-                <circle cx="22" cy="22" r="9" fill="#7c5cff" opacity="0.9"/>
-                <text x="38" y="27" font-family="Space Grotesk, sans-serif" font-size="11" fill="#e8ecf1" font-weight="600">PSIT</text>
-                <g fill="#8b96a8" font-family="Inter, sans-serif" font-size="9">
-                  <text x="200" y="27">Home</text><text x="240" y="27">About</text><text x="284" y="27">Programs</text><text x="340" y="27">Contact</text>
-                </g>
-                <rect x="0" y="44" width="400" height="96" fill="url(#psit-g)"/>
-                <defs><linearGradient id="psit-g" x1="0" y1="0" x2="400" y2="96"><stop offset="0" stop-color="#181028"/><stop offset="1" stop-color="#0c1018"/></linearGradient></defs>
-                <text x="28" y="90" font-family="Space Grotesk, sans-serif" font-size="16" fill="#e8ecf1" font-weight="700">Pak-Swedish Institute</text>
-                <text x="28" y="108" font-family="Inter, sans-serif" font-size="9" fill="#8b96a8">Technical Excellence · Landhi, Karachi</text>
-                <rect x="28" y="120" width="90" height="20" rx="10" fill="#7c5cff" opacity="0.9"/>
-                <text x="42" y="134" font-family="Inter, sans-serif" font-size="9" fill="#fff">Explore Programs</text>
-                <rect x="20" y="158" width="112" height="62" rx="8" fill="#11161f" stroke="#1c2433"/>
-                <rect x="148" y="158" width="112" height="62" rx="8" fill="#11161f" stroke="#1c2433"/>
-                <rect x="276" y="158" width="104" height="62" rx="8" fill="#11161f" stroke="#1c2433"/>
-                <text x="36" y="178" font-family="Inter, sans-serif" font-size="8" fill="#0ef6cc">CIT</text>
-                <text x="36" y="192" font-family="Inter, sans-serif" font-size="8" fill="#8b96a8">Computer Info Tech</text>
-                <text x="162" y="178" font-family="Inter, sans-serif" font-size="8" fill="#0ef6cc">Web Dev</text>
-                <text x="162" y="192" font-family="Inter, sans-serif" font-size="8" fill="#8b96a8">Design &amp; Dev</text>
-                <text x="290" y="178" font-family="Inter, sans-serif" font-size="8" fill="#0ef6cc">Electronics</text>
-                <text x="290" y="192" font-family="Inter, sans-serif" font-size="8" fill="#8b96a8">Technical</text>
-              </svg>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-tags"><span>HTML/CSS/JS</span><span>PHP</span><span>Institutional</span></div>
-            <h3>PSIT College Website</h3>
-            <p>Official website for Government Pakistani Swedish Institute of Technology — program listings, admissions info, faculty directory, and a fully responsive layout built from scratch.</p>
-            <div class="project-links">
-              <a href="#" class="project-link">Live demo <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="https://faizahsan1020-tech.github.io/SCHOOL-EXAMPLE/" target="_blank" rel="noopener" class="project-link">Live demo <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             </div>
           </div>
         </article>
@@ -437,7 +394,46 @@
             <h3>Waqashi Business Website</h3>
             <p>A real-world client site built to establish credibility online — service listings, contact flow, and a brand-first visual identity.</p>
             <div class="project-links">
-              <a href="#" class="project-link">Live demo <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="https://faizahsan1020-tech.github.io/waqashi/" target="_blank" rel="noopener" class="project-link">Live demo <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <div class="project-window">
+            <div class="project-window-bar">
+              <span></span><span></span><span></span>
+              <em>psit-college/index.html</em>
+            </div>
+            <div class="project-preview" data-preview="psit">
+              <svg viewBox="0 0 400 240" class="preview-svg" preserveAspectRatio="none">
+                <rect width="400" height="240" fill="#0c1018"/>
+                <rect x="0" y="0" width="400" height="38" fill="#11161f"/>
+                <rect x="20" y="13" width="12" height="12" rx="3" fill="#0ef6cc"/>
+                <rect x="40" y="15" width="64" height="8" rx="2" fill="#e8ecf1" opacity="0.8"/>
+                <g fill="#8b96a8"><rect x="270" y="15" width="28" height="8" rx="2"/><rect x="306" y="15" width="28" height="8" rx="2"/><rect x="342" y="15" width="34" height="8" rx="2"/></g>
+                <rect x="0" y="38" width="400" height="92" fill="#13192a"/>
+                <text x="24" y="78" font-family="Space Grotesk, sans-serif" font-size="19" fill="#e8ecf1" font-weight="600">PSIT, Landhi</text>
+                <text x="24" y="98" font-family="Inter, sans-serif" font-size="10.5" fill="#8b96a8">Govt. Pakistani Swedish Institute of Technology</text>
+                <rect x="24" y="108" width="92" height="13" rx="6.5" fill="#0ef6cc" opacity="0.85"/>
+                <g stroke="#7c5cff" stroke-width="1.4" opacity="0.5"><path d="M300 60l28-16 28 16v34h-56V60z" fill="none"/></g>
+                <rect x="24" y="150" width="110" height="64" rx="6" fill="#11161f" stroke="#1c2433"/>
+                <rect x="146" y="150" width="110" height="64" rx="6" fill="#11161f" stroke="#1c2433"/>
+                <rect x="268" y="150" width="108" height="64" rx="6" fill="#11161f" stroke="#1c2433"/>
+                <g font-family="JetBrains Mono, monospace" font-size="9" fill="#0ef6cc">
+                  <text x="36" y="172">Departments</text>
+                  <text x="158" y="172">Admissions</text>
+                  <text x="280" y="172">Notices</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>HTML/CSS/JS</span><span>Responsive</span><span>Institute site</span></div>
+            <h3>PSIT College Website</h3>
+            <p>A responsive website built for my diploma institute — department info, admissions details, and notices, organized for students and visitors alike.</p>
+            <div class="project-links">
+              <a href="https://faizahsan1020-tech.github.io/PSIT-College/" target="_blank" rel="noopener" class="project-link">Live demo <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             </div>
           </div>
         </article>
@@ -445,13 +441,11 @@
       </div>
     </div>
   </section>
-
-  <!-- ============ 3D EXPERIENCE ============ -->
   <section class="section experience-section" id="experience">
     <div class="container">
       <p class="section-label">// 04 — 3d-experience</p>
       <h2 class="section-title">3D Interactive <span class="text-accent">Web Experience</span></h2>
-      <p class="section-desc">Move your cursor across the panel — the monitor tilts in real 3D space, driven by pure CSS perspective transforms. No libraries, just code.</p>
+      <p class="section-desc">Move your cursor across the panel. The portfolio mockup tilts in real 3D space, driven by pure CSS transforms.</p>
 
       <div class="experience-stage" id="experienceStage">
         <div class="experience-floor"></div>
@@ -484,13 +478,11 @@
           <div class="floating-chip chip-2">&lt;/&gt;</div>
           <div class="floating-chip chip-3">git</div>
           <div class="floating-chip chip-4">⚡</div>
-          <div class="floating-chip chip-5">PHP</div>
-          <div class="floating-chip chip-6">SQL</div>
         </div>
 
         <div class="experience-hint">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3v6m0 0L9 6m3 3l3-3M5 14a7 7 0 0014 0v-1a7 7 0 00-14 0v1z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          move your mouse to tilt
+          move your mouse
         </div>
       </div>
     </div>
@@ -501,34 +493,50 @@
     <div class="container">
       <p class="section-label">// 05 — education.log</p>
       <h2 class="section-title">Where it's being <span class="text-accent">built</span></h2>
+      <p class="section-desc">From a foundational diploma to hands-on web development training to a CS degree in progress — each step added a different layer.</p>
 
       <div class="timeline">
         <div class="timeline-line"></div>
+
         <div class="timeline-item">
-          <div class="timeline-dot"></div>
+          <div class="timeline-dot timeline-dot-active"></div>
           <div class="glass-card timeline-card" data-tilt>
             <span class="timeline-period">2023 — Present</span>
             <h3>BS Computer Science</h3>
             <p class="timeline-org">Iqra University, Karachi</p>
-            <p class="timeline-desc">Coursework spanning data structures &amp; algorithms, object-oriented programming, web technologies, and software engineering fundamentals — paired with self-driven project work outside the classroom.</p>
+            <p class="timeline-desc">Field focus on web development with Python and DSA. Coursework spanning data structures &amp; algorithms, object-oriented programming, web technologies, and software engineering fundamentals — paired with self-driven project work outside the classroom.</p>
             <div class="timeline-tags">
-              <span>Data Structures</span><span>Algorithms</span><span>Web Dev</span><span>OOP</span><span>Python</span>
+              <span>Data Structures</span><span>Algorithms</span><span>Web Dev</span><span>OOP</span>
             </div>
           </div>
         </div>
 
-        <div class="timeline-item" style="margin-top:32px;">
-          <div class="timeline-dot" style="background:var(--violet);box-shadow:0 0 0 5px rgba(124,92,255,0.14)"></div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
           <div class="glass-card timeline-card" data-tilt>
-            <span class="timeline-period" style="color:var(--violet)">2021 — 2023</span>
-            <h3>Diploma — CIT</h3>
-            <p class="timeline-org">Govt. Pakistani Swedish Institute of Technology (PSIT), Landhi, Karachi</p>
-            <p class="timeline-desc">Three-year Computer Information Technology diploma covering web development, web designing, PHP with MySQL database integration, and core computing fundamentals. Built and deployed a full institutional website for the college as a capstone project.</p>
+            <span class="timeline-period">Diploma</span>
+            <h3>Diploma in Computer Information Technology (CIT)</h3>
+            <p class="timeline-org">Government Pakistani Swedish Institute of Technology, Landhi, Karachi</p>
+            <p class="timeline-desc">A hands-on technical diploma covering computer fundamentals, networking, and programming basics — the groundwork that pulled me toward software and the web in the first place.</p>
             <div class="timeline-tags">
-              <span>Web Development</span><span>Web Designing</span><span>PHP</span><span>MySQL</span><span>HTML/CSS/JS</span>
+              <span>CIT</span><span>Computer Fundamentals</span><span>Programming Basics</span>
             </div>
           </div>
         </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card" data-tilt>
+            <span class="timeline-period">Certificate Course</span>
+            <h3>Web Development &amp; Web Designing</h3>
+            <p class="timeline-org">Short-term professional course</p>
+            <p class="timeline-desc">A focused, affordable course covering practical front-end and back-end fundamentals — HTML, CSS, JavaScript, PHP, and MySQL — that turned classroom theory into real, working websites.</p>
+            <div class="timeline-tags">
+              <span>HTML/CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -564,20 +572,11 @@
         </div>
 
         <div class="contact-side">
-          <a href="mailto:faizahsan1020@gmail.com" class="glass-card contact-link-card" data-tilt>
+          <a href="mailto:faiz.ahsan@example.com" class="glass-card contact-link-card" data-tilt>
             <span class="contact-icon">✉</span>
             <div>
               <span class="contact-link-label">Email</span>
-              <span class="contact-link-value">faizahsan1020@gmail.com</span>
-            </div>
-          </a>
-          <a href="https://wa.me/923131144751" target="_blank" rel="noopener" class="glass-card contact-link-card" data-tilt>
-            <span class="contact-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.858L.057 23.25l5.565-1.457A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.782 9.782 0 01-4.988-1.367l-.357-.212-3.704.971.988-3.607-.232-.37A9.781 9.781 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
-            </span>
-            <div>
-              <span class="contact-link-label">WhatsApp</span>
-              <span class="contact-link-value">+92 313 1144751</span>
+              <span class="contact-link-value">faiz.ahsan@example.com</span>
             </div>
           </a>
           <a href="https://github.com/" target="_blank" rel="noopener" class="glass-card contact-link-card" data-tilt>
